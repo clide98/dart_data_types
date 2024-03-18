@@ -1,0 +1,40 @@
+void main() {
+  // Integers (int): Represents whole numbers without a decimal point
+  int age = 27;
+
+  // Doubles (double): Represents numbers with a decimal point
+  double height = 5.6;
+
+  // Strings (String): Represents a sequence of characters
+  String name = 'Alphan Bleek';
+
+  // Lists (List): Represents an ordered collection of objects
+  List<String> colors = ['red', 'green', 'blue'];
+
+  // Maps (Map): Represents a collection of key-value pairs
+  Map<String, dynamic> person = {
+    'name': 'Smith',
+    'age': 20,
+    'height': 5.4,
+    'isStudent': true,
+  };
+
+  // Printing examples for each data type
+  print('Age: $age'); // Output: Age: 27
+  print('Height: $height'); // Output: Height: 5.6
+  print('Name: $name'); // Output: Name: Alphan Bleek
+  print('Colors: $colors'); // Output: Colors: [red, green, blue]
+  print(
+      'Person: $person'); // Output: Person: {name: Smith, age: 20, height: 5.4, isStudent: true}
+
+  // Accessing elements of a list
+  print('First color: ${colors[0]}'); // Output: First color: red
+
+  // Accessing values in a map
+  print(
+      'Name: ${person['name']}, Age: ${person['age']}'); // Output: Name: Smith, Age: 20
+
+  // Updating values in a map
+  person['age'] = 21;
+  print('Updated age: ${person['age']}'); // Output: Updated age: 21
+}
